@@ -69,22 +69,30 @@ $text-color: #e2e7f1;
     position: relative;
 }
 
-.bg-html{
-    left: 10%;
-}
-.bg-body{
-    left: 15%;
-}
-
 .bg-code-bot,
 .bg-code-top{
     position: absolute;
+    left: 15%;
 }
 
 .bg-code-top{
-    top: 25%;
+    top: 30%;
 }
 .bg-code-bot{
-    bottom: 25%;
+    bottom: 30%;
 }
 
+    /***********************************************/
+    /***** MEDIUM SCREEN (>=750px AND <1300px) *****/
+    /***********************************************/
+
+@media only screen and (min-width:750px) {}
+
+    /***********************************/
+    /***** LARGE SCREEN (>=1300px) *****/
+    /***********************************/
+
+@media only screen and (min-width:1300px) {
+
+    
+}
