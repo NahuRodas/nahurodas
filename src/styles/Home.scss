@@ -8,6 +8,83 @@ $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*********************************/
 /***** SMALL SCREEN (<750px) *****/
 /*********************************/
+
+.contenedor{
+    background-color: $secondary-color;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title{
+    display: flex;
+}
+
+.title{
+    position: relative;
+    padding: 5px;
+    color: $secondary-color;
+    font-size: 14vw;
+    animation: title-animation 6s linear infinite;
+    border-top: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-color;
+}
+
+
+@keyframes title-animation{
+    0%{
+        background-color: $secondary-color;
+        color: $secondary-color;
+    }
+    25%{
+        color: $fourth-color;
+    }
+    50%{
+        background-color: $primary-color;
+        color: $text-color;
+    }
+    75%{
+        color: $fourth-color;
+    }
+    100%{
+        background-color: $secondary-color  ;
+        color: $secondary-color;
+    }
+}
+
+.bg-html,
+.bg-body{
+    font-family:cursive;
+    font-size: 15px;
+    color: $fourth-color;
+    position: relative;
+}
+
+.bg-html{
+    left: 10%;
+}
+.bg-body{
+    left: 15%;
+}
+
+.bg-code-bot,
+.bg-code-top{
+    position: absolute;
+}
+
+.bg-code-top{
+    top: 25%;
+}
+.bg-code-bot{
+    bottom: 25%;
+}
+

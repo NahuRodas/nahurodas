@@ -16,7 +16,7 @@ $text-color: #e2e7f1;
 .navbar{
     background-color: $primary-color;
     width: 100px;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,27 +24,28 @@ $text-color: #e2e7f1;
     position: fixed;
     top: 0;
     left: 0;
-    visibility: visible;
+}
+
+.container{
+    height: 100%;
+
 }
 
 .hide-menu{
-    width: 100%;
+    width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid $fourth-color;
 }
 
-.hide-menu-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .navbar-home {
     width: 100px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid $fourth-color;
     border-top: 1px solid $fourth-color;
 }
@@ -60,7 +61,7 @@ $text-color: #e2e7f1;
 
 .btn{
     width: 100%;
-    height:100%;
+    height:80%;
     background-color: transparent;
     color: $text-color;
     border: none;
@@ -80,6 +81,13 @@ $text-color: #e2e7f1;
     opacity: 0;
     font-size: 15px;
     position: absolute;
+}
+
+.hide-menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
 }
 
 .navbar-btn .btn:hover{
@@ -123,4 +131,27 @@ $text-color: #e2e7f1;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 20px;
+}
+
+        /***********************************************/
+        /***** MEDIUM SCREEN (>=750px AND <1300px) *****/
+        /***********************************************/
+
+@media only screen and (min-width:750px) {
+    
+}
+
+        /***********************************/
+        /***** LARGE SCREEN (>=1300px) *****/
+        /***********************************/
+
+@media only screen and (min-width:1300px) {
+    
+    .navbar{
+        height: 100vh;
+    }
+    
+    .hide-menu{
+        display: none;
+    }
 }

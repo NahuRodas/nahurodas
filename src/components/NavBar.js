@@ -1,18 +1,38 @@
 import React, { Component } from 'react'
+import { useState } from 'react'
 import "../styles/NavBar.scss"
 
-export class NavBar extends Component {
-  render() {
-    return (
+
+function NavBar(){
+
+  const [Menu, setMenu] = useState(true);
+  const menuOff = {
+    display: 'none'
+  }
+  const menuOn = {
+    display: 'block'
+  }
+  const hideMenu = () => {
+    if (Menu) {
+      console.log("True");
+      
+    }else{
+      console.log("False");
+    }
+    setMenu(!Menu);
+  }
+
+
+  return (
       <div className='navbar'>
         <div className="container">
           <div className="hide-menu">
-            <button className='btn hide-menu-btn'><i class='bx bx-menu'></i></button>
+            <button className='btn hide-menu-btn' onClick={ hideMenu }><i class='bx bx-menu'></i></button>
           </div>
-          <div className="navbar-home">
-            <button className='btn btn-home' to='/'><i class='bx bxs-home' ></i><span>HOME</span></button>
-          </div>
-          <div className='menu'>
+          <div className='menu' style={ Menu ?  menuOn : menuOff}>
+            <div className="navbar-home">
+              <button className='btn btn-home' to='/'><i class='bx bxs-home' ></i><span>HOME</span></button>
+            </div>
             <div className="navbar-btn">
               <button className='btn btn-sobre-mi'><i class='bx bxs-user' ></i><span>Sobre mi</span></button>
             </div>
@@ -37,7 +57,6 @@ export class NavBar extends Component {
         </div>
       </div>
     )
-  }
 }
 
 export default NavBar
