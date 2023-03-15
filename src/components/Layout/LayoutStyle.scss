@@ -1,3 +1,4 @@
+
 /********************************/
 /****** VARIABLES GLOBALES ******/
 /********************************/
@@ -8,7 +9,7 @@ $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,7 +17,7 @@ $text-color: #e2e7f1;
 /***** SMALL SCREEN (<750px) *****/
 /*********************************/
 
-.contenedor{
+.contenedor {
     background-color: $secondary-color;
     width: 100vw;
     height: 100vh;
@@ -25,11 +26,11 @@ $text-color: #e2e7f1;
     align-items: center;
 }
 
-.main-title{
+.main-title {
     display: flex;
 }
 
-.title{
+.title {
     position: relative;
     padding: 5px;
     color: $secondary-color;
@@ -40,59 +41,61 @@ $text-color: #e2e7f1;
 }
 
 
-@keyframes title-animation{
-    0%{
+@keyframes title-animation {
+    0% {
         background-color: $secondary-color;
         color: $secondary-color;
     }
-    25%{
+
+    25% {
         color: $fourth-color;
     }
-    50%{
+
+    50% {
         background-color: $primary-color;
         color: $text-color;
     }
-    75%{
+
+    75% {
         color: $fourth-color;
     }
-    100%{
-        background-color: $secondary-color  ;
+
+    100% {
+        background-color: $secondary-color ;
         color: $secondary-color;
     }
 }
 
 .bg-html,
-.bg-body{
-    font-family:cursive;
+.bg-body {
+    font-family: cursive;
     font-size: 15px;
     color: $fourth-color;
     position: relative;
 }
 
 .bg-code-bot,
-.bg-code-top{
+.bg-code-top {
     position: absolute;
     left: 15%;
 }
 
-.bg-code-top{
+.bg-code-top {
     top: 30%;
 }
-.bg-code-bot{
+
+.bg-code-bot {
     bottom: 30%;
 }
 
-    /***********************************************/
-    /***** MEDIUM SCREEN (>=750px AND <1300px) *****/
-    /***********************************************/
+/***********************************************/
+/***** MEDIUM SCREEN (>=750px AND <1300px) *****/
+/***********************************************/
 
 @media only screen and (min-width:750px) {}
 
-    /***********************************/
-    /***** LARGE SCREEN (>=1300px) *****/
-    /***********************************/
+/***********************************/
+/***** LARGE SCREEN (>=1300px) *****/
+/***********************************/
 
-@media only screen and (min-width:1300px) {
-
-    
-}
+@media only screen and (min-width:1300px) {}

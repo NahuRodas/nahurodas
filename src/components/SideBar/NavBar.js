@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useState } from 'react'
-import "../styles/NavBar.scss"
+import { Link, NavLink } from 'react-router-dom';
+import "./NavBar.scss"
 
 
 function NavBar(){
@@ -30,27 +31,27 @@ function NavBar(){
             <button className='btn hide-menu-btn' onClick={ hideMenu }><i class='bx bx-menu'></i></button>
           </div>
           <div className='menu' style={ Menu ?  menuOn : menuOff}>
-            <div className="navbar-home">
+            <Link className='navbar-home' to='/'>
               <button className='btn btn-home' to='/'><i class='bx bxs-home' ></i><span>HOME</span></button>
-            </div>
-            <div className="navbar-btn">
+            </Link>
+            <NavLink className="navbar-btn" exact="true" to="/SobreMi">
               <button className='btn btn-sobre-mi'><i class='bx bxs-user' ></i><span>Sobre mi</span></button>
-            </div>
-            <div className="navbar-btn">
+            </NavLink>
+            <NavLink className="navbar-btn" exact='true' to='/Curriculum'>
               <button className='btn btn-curriculum'><i class='bx bxs-file' ></i><span>Curriculum</span></button>
-            </div>
-            <div className="navbar-btn">
+            </NavLink>
+            <NavLink className="navbar-btn" exact='true' to='/Proyectos'>
               <button className='btn btn-proyectos'><i class='bx bxs-terminal'></i><span>Proyectos</span></button>
-            </div>
-            <div className="navbar-btn">
+            </NavLink>
+            <NavLink className="navbar-btn" exact='true' to='/Contacto'>
               <button className='btn btn-contacto'><i class='bx bxs-envelope' ></i><span>Contacto</span></button>
-            </div>
-            <div className="dark-mode">
+            </NavLink>
+            <div className="lenguaje">
               <div className="navbar-btn">
-                <button className='btn-toggle-dark-mode'><i class='bx bxs-moon'></i></button>
+                <button className='btn-english'>EN</button>
               </div>
               <div className="navbar-btn">
-                <button className='btn-toggle-light-mode'><i class='bx bxs-sun' ></i></button>
+                <button className='btn-spanish'>ES</button>
               </div>
             </div>
           </div>

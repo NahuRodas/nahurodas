@@ -108,30 +108,35 @@ $text-color: #e2e7f1;
     }
 }
 
-.dark-mode{
+.lenguaje{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn-toggle-dark-mode{
+.btn-english,
+.btn-spanish{
     background-color: $secondary-color;
     padding: 5px;
     color: $text-color;
     border: none;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.btn-english{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    font-size: 20px;
 }
-.btn-toggle-light-mode{
-    background-color: $third-color;
-    padding: 5px;
-    color: rgb(250, 250, 154);
-    border: none;
+
+.btn-spanish{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    font-size: 20px;
 }
+
 
         /***********************************************/
         /***** MEDIUM SCREEN (>=750px AND <1300px) *****/
