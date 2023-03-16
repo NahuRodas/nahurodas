@@ -11,4 +11,8 @@ $text-color: #e2e7f1;
 .home{
     background-color: $secondary-color;
     color: $text-color;
+
+    h1{
+        width: 50px;
+    }
 }

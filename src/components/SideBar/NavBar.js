@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./NavBar.scss"
 
 
@@ -31,9 +31,9 @@ function NavBar(){
             <button className='btn hide-menu-btn' onClick={ hideMenu }><i class='bx bx-menu'></i></button>
           </div>
           <div className='menu' style={ Menu ?  menuOn : menuOff}>
-            <Link className='navbar-home' to='/'>
-              <button className='btn btn-home' to='/'><i class='bx bxs-home' ></i><span>HOME</span></button>
-            </Link>
+            <NavLink className='navbar-home' to='/Home'>
+              <button className='btn btn-home'><i class='bx bxs-home' ></i><span>HOME</span></button>
+            </NavLink>
             <NavLink className="navbar-btn" exact="true" to="/SobreMi">
               <button className='btn btn-sobre-mi'><i class='bx bxs-user' ></i><span>Sobre mi</span></button>
             </NavLink>
