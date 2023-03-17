@@ -19,3 +19,8 @@ $text-color: #e2e7f1;
 body{
     background-color: $secondary-color;
 }
+
+@font-face {
+    font-family: 'techno';
+    src: url(./assets/TechnoRaceItalic-eZRWe.otf);
+}

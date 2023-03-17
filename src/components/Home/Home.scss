@@ -8,9 +8,12 @@ $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'Techno';
+    src: url('../../assets/TechnoRaceItalic-eZRWe.otf') format('otf');
 }
+
+    /***************************/
 
 .contenedor{
     padding-left: 150px;
@@ -27,12 +30,51 @@ $text-color: #e2e7f1;
     
 
     .main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 20px;
-        margin-top: 40vh;
+        margin-top: 30vh;
         font-size: 9vw;
-        text-align: center;
-        word-spacing: 0;
-        
+        font-family: 'Techno', 'Arial';
+        user-select: none;
+        text-shadow: 15px 15px 2px $primary-color;
+    }
+
+    .first-name{
+        position: absolute;
+        display: flex;
+        top: 30%;
+        left: 15%
+    }
+    .mid-name{
+        position: absolute;
+        display: flex;
+        top: 40%;
+        left: 37%
+    }
+    .last-name{
+        position: absolute;
+        display: flex;
+        bottom:30%;
+        right: 13%;
+    }
+
+    .title:hover{
+        animation: mainTitleAnimation 0.5s ease-out infinite;
+    }
+}
+
+@keyframes mainTitleAnimation{
+    0%{
+        font-size: 9vw;
+    }
+    50%{
+        font-size: 11vw;
+
+    }
+    100%{
+        font-size: 9vw;
     }
 }
 
@@ -43,10 +85,14 @@ $text-color: #e2e7f1;
     user-select: none;
 }
 
+
+
 .bg-html,
-.bg-body {
+.bg-body,
+.quote,
+.decoration {
     font-family: cursive;
-    font-size: 15px;
+    font-size: 20px;
     color: $fourth-color;
     position: relative;
 }
@@ -58,9 +104,33 @@ $text-color: #e2e7f1;
 }
 
 .bg-code-top {
-    top: 30%;
+    top: 20%;
 }
 
 .bg-code-bot {
-    bottom: 30%;
+    bottom: 20%;
+}
+
+.quote {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 350px;
+}
+
+.decoration{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    text-align: center;
+}
+
+.subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 15%;
+    left: 35%;
 }
