@@ -4,6 +4,7 @@
     /********************************/
 
 $primary-color: #0A2647;
+$navbar-bg: #0a2647a1;
 $secondary-color: #144272;
 $third-color: #205295;
 $fourth-color: #2C74B3;
@@ -14,21 +15,12 @@ $text-color: #e2e7f1;
     /*********************************/
 
 .navbar{
-    background-color: $primary-color;
+    background-color: $navbar-bg;
     width: 100px;
-    height: fit-content;
     z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
-}
-
-.container{
-    height: 100%;
-}
-
-.menu{
-    padding-top:20vh;
 }
 
 .hide-menu{
@@ -37,8 +29,12 @@ $text-color: #e2e7f1;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid $fourth-color;
 }
 
+.menu{
+    height: 100vh;
+}
 
 .navbar-home {
     width: 100px;
@@ -49,6 +45,10 @@ $text-color: #e2e7f1;
     border-bottom: 1px solid $fourth-color;
     border-top: 1px solid $fourth-color;
     padding: 10px;
+}
+
+.active-btn{
+    background-color: $third-color;
 }
 
 .navbar-btn{
@@ -89,7 +89,6 @@ $text-color: #e2e7f1;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
 }
 
 .navbar-btn:hover{
@@ -101,6 +100,7 @@ $text-color: #e2e7f1;
         opacity: 1;
     }
 }
+
 .navbar-home:hover {
     background-color: $third-color;
     i {
@@ -162,5 +162,9 @@ $text-color: #e2e7f1;
     
     .hide-menu{
         display: none;
+    }
+
+    .menu {
+        padding-top: 20vh;
     }
 }

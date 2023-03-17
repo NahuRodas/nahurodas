@@ -8,11 +8,59 @@ $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    padding-left: 150px;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
 .home{
     background-color: $secondary-color;
     color: $text-color;
+    
 
-    h1{
-        width: 50px;
+    .main-title{
+        margin: 20px;
+        margin-top: 40vh;
+        font-size: 9vw;
+        text-align: center;
+        word-spacing: 0;
+        
     }
+}
+
+.bg-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.bg-html,
+.bg-body {
+    font-family: cursive;
+    font-size: 15px;
+    color: $fourth-color;
+    position: relative;
+}
+
+.bg-code-bot,
+.bg-code-top {
+    position: absolute;
+    left: 15%;
+}
+
+.bg-code-top {
+    top: 30%;
+}
+
+.bg-code-bot {
+    bottom: 30%;
 }

@@ -1,18 +1,20 @@
 import React from 'react'
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import "./NavBar.scss"
 
 
-function NavBar(){
+const NavBar = () => {
 
   const [Menu, setMenu] = useState(true);
   const menuOff = {
     display: 'none'
   }
+
   const menuOn = {
     display: 'block'
   }
+
   const hideMenu = () => {
     if (Menu) {
       console.log("True");
@@ -23,17 +25,16 @@ function NavBar(){
     setMenu(!Menu);
   }
 
-
   return (
       <div className='navbar'>
-        <div className="container">
+        <div className="contenedor-nav">
           <div className="hide-menu">
             <button className='btn hide-menu-btn' onClick={ hideMenu }><i class='bx bx-menu'></i></button>
           </div>
-          <div className='menu' style={ Menu ?  menuOn : menuOff}>
-            <NavLink className='navbar-home' to='/Home'>
+          <nav className='menu' style={ Menu ?  menuOn : menuOff}>
+            <Link className='navbar-home' to='/'>
               <button className='btn btn-home'><i class='bx bxs-home' ></i><span>HOME</span></button>
-            </NavLink>
+            </Link>
             <NavLink className="navbar-btn" exact="true" to="/SobreMi">
               <button className='btn btn-sobre-mi'><i class='bx bxs-user' ></i><span>Sobre mi</span></button>
             </NavLink>
@@ -54,7 +55,7 @@ function NavBar(){
                 <button className='btn-spanish'>ES</button>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     )
