@@ -3,21 +3,21 @@
     /****** VARIABLES GLOBALES ******/
     /********************************/
 
+$navbar-bg: #3A1078;
 $primary-color: #0A2647;
-$navbar-bg: #0a2647a1;
 $secondary-color: #144272;
 $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
+$second-text-color: #F0EB8D;
 
     /*********************************/
     /***** SMALL SCREEN (<750px) *****/
     /*********************************/
 
 .navbar{
-    background-color: $navbar-bg;
+    background-color: #0a2647b2;
     width: 100px;
-    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;

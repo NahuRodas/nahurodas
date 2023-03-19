@@ -10,6 +10,27 @@ import Contacto from './components/Contacto/Contacto';
 function App() {
     return(
         <>
+        <div className="bg-page">
+          <div className="decoration">
+            <p>01000011 01100101 01110011 01100001 
+              01110010 00100000 01001110 01100001 
+              01101000 01110101 01100101 01101100 
+              00100000 01010010 01101111 01100100 
+              01100001 01110011</p>
+          </div>
+          <div className="quote">
+            <span>&lt;span&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptates nihil enim praesentium saepe in deleniti. &lt;/span&gt;</span>
+          </div>
+          <div className="bg-code-top">
+              <h4 className='bg-html'>&lt;html&gt;</h4>
+              <h4 className='bg-body'>&emsp;&lt;body&gt;</h4>
+          </div>
+          <div className="bg-code-bot">
+              <h4 className='bg-body'>&emsp;&lt;/body&gt;</h4>
+              <h4 className='bg-html'>&lt;/html&gt;</h4>
+          </div>
+        </div>
             <NavBar />
             <Routes>
                     <Route path='/' element = { <Home /> } />

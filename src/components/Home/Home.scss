@@ -2,11 +2,13 @@
 /****** VARIABLES GLOBALES ******/
 /********************************/
 
+$navbar-bg: #3A1078;
 $primary-color: #0A2647;
 $secondary-color: #144272;
 $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
+$second-text-color: #F0EB8D;
 
 @font-face {
     font-family: 'Techno';
@@ -14,6 +16,8 @@ $text-color: #e2e7f1;
 }
 
     /***************************/
+
+*{overflow: hidden;}
 
 .contenedor{
     padding-left: 150px;
@@ -27,6 +31,7 @@ $text-color: #e2e7f1;
 .home{
     background-color: $secondary-color;
     color: $text-color;
+    overflow: hidden;
     
 
     .main-title{
@@ -39,7 +44,8 @@ $text-color: #e2e7f1;
         font-family: 'Techno', 'Arial';
         user-select: none;
         text-shadow: 15px 15px 2px $primary-color;
-    }
+
+}
 
     .first-name{
         position: absolute;
@@ -60,23 +66,8 @@ $text-color: #e2e7f1;
         right: 13%;
     }
 
-    .title:hover{
-        animation: mainTitleAnimation 0.5s ease-out infinite;
-    }
 }
 
-@keyframes mainTitleAnimation{
-    0%{
-        font-size: 9vw;
-    }
-    50%{
-        font-size: 11vw;
-
-    }
-    100%{
-        font-size: 9vw;
-    }
-}
 
 .bg-page {
     display: flex;
@@ -133,4 +124,22 @@ $text-color: #e2e7f1;
     position: absolute;
     bottom: 15%;
     left: 35%;
+}
+
+.first-letter {
+    color: $second-text-color;
+}
+
+.first-name{
+    animation: bounceInDown 1s;
+}
+.mid-name{
+    animation: bounceInDown 1.2s;
+}
+.last-name{
+    animation: bounceInDown 1.4s;
+}
+
+.title:hover{
+    animation: jello 0.5s;
 }
