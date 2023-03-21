@@ -2,8 +2,58 @@
 /****** VARIABLES GLOBALES ******/
 /********************************/
 
+$navbar-bg: #3A1078;
 $primary-color: #0A2647;
 $secondary-color: #144272;
 $third-color: #205295;
 $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
+$second-text-color: #F0EB8D;
+
+.bg-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    z-index: -1;
+}
+
+
+
+.bg-html,
+.bg-body,
+.quote,
+.decoration {
+    font-family: cursive;
+    font-size: 20px;
+    color: $fourth-color;
+    position: relative;
+}
+
+.bg-code-bot,
+.bg-code-top {
+    position: absolute;
+    left: 15%;
+}
+
+.bg-code-top {
+    top: 20%;
+}
+
+.bg-code-bot {
+    bottom: 20%;
+}
+
+.quote {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 350px;
+}
+
+.decoration {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    text-align: center;
+}

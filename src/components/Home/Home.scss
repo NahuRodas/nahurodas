@@ -68,55 +68,25 @@ $second-text-color: #F0EB8D;
 
 }
 
-
-.bg-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+.first-letter {
+    color: $second-text-color;
 }
 
-
-
-.bg-html,
-.bg-body,
-.quote,
-.decoration {
-    font-family: cursive;
-    font-size: 20px;
-    color: $fourth-color;
-    position: relative;
+.first-name{
+    animation: bounceInLeft 1s;
+}
+.mid-name{
+    animation: bounceInDown 1.2s;
+}
+.last-name{
+    animation: bounceInRight 1.4s;
 }
 
-.bg-code-bot,
-.bg-code-top {
-    position: absolute;
-    left: 15%;
+.title:hover{
+    animation: jello 0.5s;
 }
 
-.bg-code-top {
-    top: 20%;
-}
-
-.bg-code-bot {
-    bottom: 20%;
-}
-
-.quote {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    width: 350px;
-}
-
-.decoration{
-    position: absolute;
-    bottom: 0;
-    width: 70%;
-    text-align: center;
-}
-
-.subtitle{
+.subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
@@ -124,22 +94,26 @@ $second-text-color: #F0EB8D;
     position: absolute;
     bottom: 15%;
     left: 35%;
+    animation: bounceInUp 1s;
 }
 
-.first-letter {
+.contacto-home{
+    width: 160px;
+    height: 60px;
+    animation: pulse 1s infinite;
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+}
+.btn-contacto-home{
+        animation: bounceInUp 1s;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid $second-text-color;
     color: $second-text-color;
-}
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
 
-.first-name{
-    animation: bounceInDown 1s;
-}
-.mid-name{
-    animation: bounceInDown 1.2s;
-}
-.last-name{
-    animation: bounceInDown 1.4s;
-}
-
-.title:hover{
-    animation: jello 0.5s;
 }

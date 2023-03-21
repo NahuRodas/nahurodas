@@ -56,6 +56,20 @@ $second-text-color: #F0EB8D;
     justify-content: center;
 }
 
+.bg{
+    rotate: 180deg;
+    width: 29vw;
+    height: 29vw;
+    padding: 8px;
+    position: absolute;
+    right: 9.5%;
+    bottom: 19%;
+    background: conic-gradient(#14417200 90%, $second-text-color);
+    border-radius: 50%;
+    opacity: 0;
+    animation: ppAnimation 1s linear infinite;
+}
+
 .pp-bg{
     width: 29vw;
     height: 29vw;
@@ -63,7 +77,7 @@ $second-text-color: #F0EB8D;
     position: absolute;
     right: 9.5%;
     bottom: 19%;
-    background: linear-gradient(to right, #14417200 70%, $fourth-color);
+    background: conic-gradient( #14417200 90%, $text-color);
     border-radius: 50%;
     opacity: 0;
     animation: ppAnimation 1s linear infinite;
@@ -73,7 +87,7 @@ $second-text-color: #F0EB8D;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1s;
 }
 
 .pp-img img {
@@ -85,6 +99,10 @@ $second-text-color: #F0EB8D;
 }
 
 @keyframes ppAnimation{
+    0%{
+        transform: rotate(0deg);
+        opacity: 100;
+    }
     100%{
         transform:rotate(360deg);
         opacity: 100;

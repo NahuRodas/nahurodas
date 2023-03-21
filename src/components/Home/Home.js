@@ -1,5 +1,6 @@
 import 'animate.css'
 import './Home.scss'
+import { NavLink } from 'react-router-dom'
 
 
 const Home = () => {
@@ -30,7 +31,10 @@ const Home = () => {
               <div className="title">s</div>
             </div>
           </h1>
-        <p className='subtitle  animate__animated animate__fadeIn'>Desarrolador Web - Front end - Back end - Diseñador Web  </p>
+        <p className='subtitle'>Desarrolador Web - Front end - Back end - Diseñador Web  </p>
+        <NavLink className="contacto-home" exact='true' to='/Contacto'>
+              <button className='btn-contacto-home'><span>Contacto</span></button>
+        </NavLink>
         </div>
       </div>
     )
