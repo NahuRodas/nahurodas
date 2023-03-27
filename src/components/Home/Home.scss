@@ -100,13 +100,13 @@ $second-text-color: #F0EB8D;
 .contacto-home{
     width: 160px;
     height: 60px;
-    animation: pulse 1s infinite;
+    animation: rubberBand 1s infinite;
     position: absolute;
     right: 15%;
     bottom: 15%;
 }
 .btn-contacto-home{
-        animation: bounceInUp 1s;
+    animation: bounceInUp 1s;
     width: 150px;
     height: 50px;
     background: transparent;
@@ -115,5 +115,8 @@ $second-text-color: #F0EB8D;
     cursor: pointer;
     border-radius: 15px;
     font-size: 15px;
+}
 
+.btn-contacto-home:hover{
+    background-color: $third-color;
 }

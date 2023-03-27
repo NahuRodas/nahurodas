@@ -33,7 +33,7 @@ const Home = () => {
           </h1>
         <p className='subtitle'>Desarrolador Web - Front end - Back end - Diseñador Web  </p>
         <NavLink className="contacto-home" exact='true' to='/Contacto'>
-              <button className='btn-contacto-home'><span>Contacto</span></button>
+              <button className='btn-contacto-home'><span>¡Contactame!</span></button>
         </NavLink>
         </div>
       </div>

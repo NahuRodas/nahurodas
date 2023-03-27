@@ -32,11 +32,13 @@ $second-text-color: #F0EB8D;
 }
 
 .particion{
+    height: auto;
     border: 2px solid $primary-color;
     background-color: #205395e0;
     color: $text-color;
     animation: flipInX 1s;
     box-shadow: 10px 10px 5px $primary-color;
+    overflow: auto;
 }
 
 .particion h2{
@@ -60,8 +62,6 @@ $second-text-color: #F0EB8D;
 
 
 .lista{
-    overflow: auto;
-    overflow-x: hidden;
     padding-bottom: 10px;
     height: 100%;
 
@@ -75,7 +75,6 @@ $second-text-color: #F0EB8D;
 
     li {
         background-color: $third-color;
-        list-style: circle;
         width: 100%;
         padding: 10px;
         font-size: 18px;
