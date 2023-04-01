@@ -3,6 +3,9 @@
     /****** VARIABLES GLOBALES ******/
     /********************************/
 
+$breackpoint-smartphone: 300px;
+$breackpoint-desktop: 1300px;
+
 $navbar-bg: #3A1078;
 $primary-color: #0A2647;
 $secondary-color: #144272;
@@ -15,158 +18,155 @@ $second-text-color: #F0EB8D;
     /***** SMALL SCREEN (<750px) *****/
     /*********************************/
 
-.navbar{
-    background-color: #0a2647b2;
-    width: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    animation: fadeIn 1s;
-}
-
-.hide-menu{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid $fourth-color;
-}
-
-.menu{
-    height: 100vh;
-}
-
-.navbar-home {
-    width: 100px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $fourth-color;
-    border-top: 1px solid $fourth-color;
-    padding: 10px;
-}
-
-.active-btn{
-    background-color: $third-color;
-}
-
-.navbar-btn{
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $fourth-color;
-    padding: 10px;
-}
-
-.btn{
-    width: 100%;
-    height:80%;
-    background-color: transparent;
-    color: $text-color;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn i{
-    opacity: 1;
-    font-size: 40px;
-    position: absolute;
-}
-.btn span{
-    opacity: 0;
-    font-size: 15px;
-    position: absolute;
-}
-
-.hide-menu-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-btn:hover{
-    background-color: $third-color;
-    i{
-        opacity: 0;
+@media only screen and (min-width: $breackpoint-smartphone) {
+    .navbar {
+        background-color: #0a2647b2;
+        width: 100px;
+        position: fixed;
+        z-index: 99;
+        animation: fadeIn 1s;
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-top: 5px;
     }
-    span{
+
+    .hide-menu {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid $fourth-color;
+        border-radius: 15px;
+    }
+    
+    .menu {
+        height: 90%
+    }
+    
+    .navbar-home {
+        width: 100px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $fourth-color;
+        border-top: 1px solid $fourth-color;
+        padding: 10px;
+    }
+    
+    .active-btn {
+        background-color: $third-color;
+    }
+
+    .navbar-btn {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $fourth-color;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        height: 80%;
+        background-color: transparent;
+        color: $text-color;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn i {
         opacity: 1;
+        font-size: 40px;
+        position: absolute;
     }
-}
 
-.navbar-home:hover {
-    background-color: $third-color;
-    i {
+    .btn span {
         opacity: 0;
+        font-size: 15px;
+        position: absolute;
     }
 
-    span {
-        opacity: 1;
+    .hide-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-btn:hover {
+        background-color: $third-color;
+
+        i {
+            opacity: 0;
+        }
+
+        span {
+            opacity: 1;
+        }
+    }
+
+    .navbar-home:hover {
+        background-color: $third-color;
+
+        i {
+            opacity: 0;
+        }
+
+        span {
+            opacity: 1;
+        }
+    }
+
+    .lenguaje {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-english,
+    .btn-spanish {
+        background-color: $secondary-color;
+        padding: 5px;
+        color: $text-color;
+        border: none;
+        margin: 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn-english {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .btn-spanish {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 }
 
-.lenguaje{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@media only screen and (min-width: $breackpoint-desktop) {
 
-.btn-english,
-.btn-spanish{
-    background-color: $secondary-color;
-    padding: 5px;
-    color: $text-color;
-    border: none;
-    margin: 0;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-
-.btn-english{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.btn-spanish{
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-
-        /***********************************************/
-        /***** MEDIUM SCREEN (>=750px AND <1300px) *****/
-        /***********************************************/
-
-@media only screen and (min-width:750px) {
-    
-}
-
-        /***********************************/
-        /***** LARGE SCREEN (>=1300px) *****/
-        /***********************************/
-
-@media only screen and (min-width:1300px) {
-    
-    .navbar{
-        height: 100vh;
+    .navbar {
+        margin: 0;
+        border-radius: 0;
     }
-    
-    .hide-menu{
-        display: none;
+
+    .hide-menu {
+        visibility: hidden;
     }
 
     .menu {
-        padding-top: 20vh;
+        height: 100vh;
     }
+
 }
+
+
