@@ -2,6 +2,10 @@
 /****** VARIABLES GLOBALES ******/
 /********************************/
 
+$breackpoint-smartphone: 300px;
+$breackpoint-tablet: 760px;
+$breackpoint-desktop: 1300px;
+
 $navbar-bg: #3A1078;
 $primary-color: #0A2647;
 $secondary-color: #144272;
@@ -10,50 +14,85 @@ $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 $second-text-color: #F0EB8D;
 
-.bg-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    z-index: -1;
+
+
+@media screen and (min-width: $breackpoint-smartphone) {
+    .bg-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            z-index: -1;
+    }
+
+    .bg-html,
+    .bg-body,
+    .quote,
+    .decoration {
+        font-family: cursive;
+        font-size: 1em;
+        color: $fourth-color;
+        position: relative;
+    }
+
+    .bg-code-bot,
+    .bg-code-top {
+        position: absolute;
+        left: 5%;
+    }
+
+    .bg-code-top {
+        top: 20%;
+    }
+
+    .bg-code-bot {
+        bottom: 20%;
+    }
+
+    .quote {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 350px;
+    }
+
+    .decoration {
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        text-align: center;
+    }
 }
 
+@media screen and (min-width: $breackpoint-desktop) {
+    .bg-html,
+    .bg-body,
+    .quote,
+    .decoration {
+        font-size: 20px;
+    }
 
+    .bg-code-bot,
+    .bg-code-top {
+        left: 15%;
+    }
 
-.bg-html,
-.bg-body,
-.quote,
-.decoration {
-    font-family: cursive;
-    font-size: 20px;
-    color: $fourth-color;
-    position: relative;
-}
+    .bg-code-top {
+        top: 20%;
+    }
 
-.bg-code-bot,
-.bg-code-top {
-    position: absolute;
-    left: 15%;
-}
+    .bg-code-bot {
+        bottom: 20%;
+    }
 
-.bg-code-top {
-    top: 20%;
-}
+    .quote {
+        top: 15%;
+        right: 5%;
+        width: 350px;
+    }
 
-.bg-code-bot {
-    bottom: 20%;
-}
-
-.quote {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    width: 350px;
-}
-
-.decoration {
-    position: absolute;
-    bottom: 0;
-    width: 70%;
-    text-align: center;
+    .decoration {
+        bottom: 0;
+        width: 70%;
+    }
 }
