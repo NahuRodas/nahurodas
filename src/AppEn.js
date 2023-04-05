@@ -1,14 +1,13 @@
 import './App.scss'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/SideBar/NavBar'
-import Home from './components/Home/Home';
-import SobreMi from './components/SobreMi/SobreMi';
-import Curriculum from './components/Curriculum/Curriculum';
-import Proyectos from './components/Proyectos/Proyectos';
-import Contacto from './components/Contacto/Contacto';
-import ContactoEn from './components/Contacto/ContactoEn';
+import NavBar from './components/SideBar/NavBarEn'
+import Home from './components/Home/HomeEn';
+import SobreMi from './components/SobreMi/SobreMiEn';
+import Curriculum from './components/Curriculum/CurriculumEn';
+import Proyectos from './components/Proyectos/ProyectosEn';
+import Contacto from './components/Contacto/ContactoEn';
 
-function App() {
+function AppEn() {
     return(
         <>
         <div className="bg-page">
@@ -39,10 +38,9 @@ function App() {
                     <Route path='/Curriculum' element = { <Curriculum /> } />
                     <Route path='/Proyectos' element = { <Proyectos /> } />
                     <Route path='/Contacto' element = { <Contacto /> } />
-                    <Route path='/ContactoEn' element = { <ContactoEn /> } />
             </Routes>
         </>
     )
 }
 
-export default App;
+export default AppEn;

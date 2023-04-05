@@ -130,9 +130,27 @@ $second-text-color: #F0EB8D;
         justify-content: center;
     }
 
+    .navbar-lenguage {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $fourth-color;
+    }
+
+    .btn-english:hover {
+        background-color: $third-color;
+    }
+    .btn-spanish:hover {
+        background-color: $third-color;
+    }
+
     .btn-english,
     .btn-spanish {
-        background-color: $secondary-color;
+        width: 100%;
+        height: 100%;
+        background:transparent;
         padding: 5px;
         color: $text-color;
         border: none;
@@ -142,14 +160,9 @@ $second-text-color: #F0EB8D;
     }
 
     .btn-english {
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-right: 1px solid $primary-color;
     }
 
-    .btn-spanish {
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
 }
 
 @media only screen and (min-width: $breackpoint-desktop) {

@@ -6,7 +6,9 @@ import "./NavBar.scss"
 
 const NavBar = () => {
 
+ 
   const [Menu, setMenu] = useState(true);
+
   const menuOff = {
     display: 'none'
   }
@@ -44,15 +46,15 @@ const NavBar = () => {
             <NavLink className="navbar-btn" exact='true' to='/Proyectos'>
               <button className='btn btn-proyectos'><i class='bx bxs-terminal'></i><span>Proyectos</span></button>
             </NavLink>
-            <NavLink className="navbar-btn" exact='true' to='/Contacto'>
+            <NavLink className="navbar-btn" exact='true'  to='/Contacto'>
               <button className='btn btn-contacto'><i class='bx bxs-envelope' ></i><span>Contacto</span></button>
             </NavLink>
             <div className="lenguaje">
-              <div className="navbar-btn">
-                <button className='btn-english'>EN</button>
+              <div className="navbar-lenguage" >
+                <button className='btn-english' >EN</button>
               </div>
-              <div className="navbar-btn">
-                <button className='btn-spanish'>ES</button>
+              <div className="navbar-lenguage active">
+                <button className='btn-spanish' >ES</button>
               </div>
             </div>
           </nav>
