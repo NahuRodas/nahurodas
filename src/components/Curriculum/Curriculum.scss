@@ -2,6 +2,10 @@
 /****** VARIABLES GLOBALES ******/
 /********************************/
 
+$breackpoint-smartphone: 300px;
+$breackpoint-tablet: 760px;
+$breackpoint-desktop: 1300px;
+
 $navbar-bg: #3A1078;
 $primary-color: #0A2647;
 $secondary-color: #144272;
@@ -11,60 +15,63 @@ $text-color: #e2e7f1;
 $second-text-color: #F0EB8D;
 
 
-.contenedor-curriculum{
-    width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 3vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    position: relative;
-}
 
-.grilla-curriculum{
-    height: 100%;
-    padding: 20px;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-
-.particion{
-    height: 100%;
-    border: 2px solid $primary-color;
-    background-color: #205395e0;
-    color: $text-color;
-    animation: flipInX 1s;
-    box-shadow: 10px 10px 5px $primary-color;
-}
-
-.particion h2{
-    font-size: 35px;
-    text-align: center;
-    padding: 10px;
-    background-color: $secondary-color;
-    width: 100%;
-    border-bottom: 2px solid $primary-color;
-    color: $second-text-color;
-}
-
-.conocimientos{
-    display: flex;
-    justify-content: center;
-    ul{
-        width: 100%;
-        border-right: 1px solid $primary-color;
+@media screen and (min-width: $breackpoint-smartphone) {
+.contenedor-curriculum {
+        width: 100vw;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
-}
+
+    .grilla-curriculum {
+        height: 100%;
+        padding: 20px;
+        height: fit-content;
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .particion {
+        height: 100%;
+        border: 2px solid $primary-color;
+        background-color: #205395e0;
+        color: $text-color;
+        animation: flipInX 1s;
+        box-shadow: 10px 10px 5px $primary-color;
+        margin-bottom: 10px;
+    }
+
+    .particion h2 {
+        font-size: 35px;
+        text-align: center;
+        padding: 10px;
+        background-color: $secondary-color;
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+        color: $second-text-color;
+    }
+
+    .conocimientos {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: 100%;
+            border-right: 1px solid $primary-color;
+        }
+    }
 
 
-.lista{
-    padding-bottom: 10px;
-    height: 100%;
+    .lista {
+        padding-bottom: 10px;
+        height: 100%;
 
-    h3 {
+        h3 {
             padding: 10px;
             background-color: $secondary-color;
             border-bottom: 1px solid $primary-color;
@@ -72,30 +79,121 @@ $second-text-color: #F0EB8D;
             font-size: 25px;
         }
 
-    li {
-        background-color: $third-color;
-        width: 100%;
-        padding: 10px;
-        font-size: 18px;
-        border-bottom: 1px solid $primary-color;
-        border-bottom: 1px solid $primary-color;
-    }
+        li {
+            background-color: $third-color;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid $primary-color;
+            border-bottom: 1px solid $primary-color;
+        }
 
-    li:nth-child(odd) {
+        li:nth-child(odd) {
             background-color: $fourth-color;
         }
 
-    span{
-        font-weight:bold;
+        span {
+            font-weight: bold;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        visibility: hidden;
     }
 }
+@media screen and (min-width: $breackpoint-desktop) {
+.contenedor-curriculum {
+        width: 100vw;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+        position: relative;
+    }
 
-::-webkit-scrollbar {
-    visibility: hidden;
-    width: 0px;
+    .grilla-curriculum {
+        height: 100%;
+        padding: 20px;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .particion {
+        height: 100%;
+        border: 2px solid $primary-color;
+        background-color: #205395e0;
+        color: $text-color;
+        animation: flipInX 1s;
+        box-shadow: 10px 10px 5px $primary-color;
+    }
+
+    .particion h2 {
+        font-size: 35px;
+        text-align: center;
+        padding: 10px;
+        background-color: $secondary-color;
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+        color: $second-text-color;
+    }
+
+    .conocimientos {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: 100%;
+            border-right: 1px solid $primary-color;
+        }
+    }
+
+
+    .lista {
+        padding-bottom: 10px;
+        height: 100%;
+
+        h3 {
+            padding: 10px;
+            background-color: $secondary-color;
+            border-bottom: 1px solid $primary-color;
+            color: $second-text-color;
+            font-size: 25px;
+        }
+
+        li {
+            background-color: $third-color;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid $primary-color;
+            border-bottom: 1px solid $primary-color;
+        }
+
+        li:nth-child(odd) {
+            background-color: $fourth-color;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        visibility: hidden;
+    }
+
 }
-
-::-webkit-scrollbar-thumb {
-    visibility: hidden;
-}
-
