@@ -122,7 +122,7 @@ $second-text-color: #F0EB8D;
             margin-left: auto;
             margin-right: auto;
             width: 800px;
-            transform: scale(2, 2)
+            transform: scale(1.5, 1.5)
         }
 
         .proyecto-info {
@@ -135,6 +135,7 @@ $second-text-color: #F0EB8D;
 
             h4 {
                 text-align: center;
+                font-size: 1vw;
                 padding: 5px;
                 border-bottom: 1px solid $primary-color;
                 margin-bottom: 5px;
@@ -146,6 +147,7 @@ $second-text-color: #F0EB8D;
             }
 
             p {
+                font-size: 16px;
                 margin-top: 5px;
             }
         }
