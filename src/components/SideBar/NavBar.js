@@ -35,7 +35,7 @@ const NavBar = () => {
           </div>
           <nav className='menu' style={ Menu ?  menuOn : menuOff}>
             <Link className='navbar-home' to='/'>
-              <button className='btn btn-home'><i class='bx bxs-home' ></i><span>HOME</span></button>
+              <button className='btn btn-home'><i class='bx bxs-home' ></i><span>Inicio</span></button>
             </Link>
             <NavLink className="navbar-btn" exact="true" to="/SobreMi">
               <button className='btn btn-sobre-mi'><i class='bx bxs-user' ></i><span>Sobre mi</span></button>
@@ -50,12 +50,12 @@ const NavBar = () => {
               <button className='btn btn-contacto'><i class='bx bxs-envelope' ></i><span>Contacto</span></button>
             </NavLink>
             <div className="lenguaje">
-              <div className="navbar-lenguage" >
+              <Link className="navbar-lenguage" >
                 <button className='btn-english' >EN</button>
-              </div>
-              <div className="navbar-lenguage active">
+              </Link>
+              <Link className="navbar-lenguage active">
                 <button className='btn-spanish' >ES</button>
-              </div>
+              </Link>
             </div>
           </nav>
         </div>
