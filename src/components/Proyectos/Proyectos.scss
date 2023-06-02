@@ -14,7 +14,7 @@ $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 $second-text-color: #F0EB8D;
 
-@media screen and (min-width: $breackpoint-smartphone) {
+
     .contenedor-proyectos {
         font-family: Arial, Helvetica, sans-serif;
         position: relative;
@@ -77,7 +77,7 @@ $second-text-color: #F0EB8D;
 
         animation: bounceIn 1s;
     }
-}
+
 
 @media screen and (min-width: $breackpoint-tablet) {
     .proyecto-info {

@@ -64,7 +64,7 @@ const Curriculum = () => {
               <h2>Extras</h2>
             <div className="lista">
               <ul>
-              <li>Nivel de ingles intermedio</li>
+              <li>Nivel de ingles alto</li>
               <li>Microssoft Office</li>
               <li>Photoshop</li>
               <li>After Effects</li>

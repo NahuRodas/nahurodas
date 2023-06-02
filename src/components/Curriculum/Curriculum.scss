@@ -16,7 +16,7 @@ $second-text-color: #F0EB8D;
 
 
 
-@media screen and (min-width: $breackpoint-smartphone) {
+
 .contenedor-curriculum {
         width: 100vw;
         font-family: Arial, Helvetica, sans-serif;
@@ -105,7 +105,7 @@ $second-text-color: #F0EB8D;
     ::-webkit-scrollbar-thumb {
         visibility: hidden;
     }
-}
+
 @media screen and (min-width: $breackpoint-desktop) {
 .contenedor-curriculum {
         width: 100vw;

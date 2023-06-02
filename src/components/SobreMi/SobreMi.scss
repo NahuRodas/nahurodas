@@ -14,7 +14,7 @@ $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 $second-text-color: #F0EB8D;
 
-@media screen and (min-width: $breackpoint-smartphone) {
+
     .contenedor-sobre-mi {
         display: flex;
         align-items: center;
@@ -114,7 +114,7 @@ $second-text-color: #F0EB8D;
         }
     }
 
-}
+
 
 @media screen and (min-width: $breackpoint-tablet) {
     .sobre-mi {
