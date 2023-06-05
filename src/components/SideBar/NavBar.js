@@ -51,7 +51,7 @@ const NavBar = () => {
             </NavLink>
             <div className="lenguaje">
               <Link className="navbar-lenguage" to={"https://cesarnahuelrodasen.netlify.app/"}>
-                <button className='btn-english' >EN</button>
+                <button className='btn-english' ><img src="" alt="" /></button>
               </Link>
               <Link className="navbar-lenguage active" to={"https://cesarnahuelrodas.netlify.app/"}>
                 <button className='btn-spanish' >ES</button>
