@@ -26,105 +26,109 @@ $second-text-color: #F0EB8D;
 
 
 
-    .contenedor{
-        width: 100vw;
-        height: 100vh;
-        display: block;
-        align-items: center;
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.home {
+    background-color: $secondary-color;
+    color: $text-color;
+
+    .main-title {
+        display: flex;
         justify-content: center;
-        padding: 10px;
+        align-items: center;
+        margin: 20px;
+        margin-top: 30vh;
+        font-size: 15vw;
+        font-family: 'Techno', 'Arial';
+        user-select: none;
+        text-shadow: 5px 5px 2px $primary-color;
     }
-    
-    .home {
-        background-color: $secondary-color;
-        color: $text-color;
 
-        .main-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px;
-            margin-top: 30vh;
-            font-size: 15vw;
-            font-family: 'Techno', 'Arial';
-            user-select: none;
-            text-shadow: 5px 5px 2px $primary-color;
-        }
-
-        .first-name {
-            position: absolute;
-            display: flex;
-            top: 30%;
-            left: 10%
-        }
-
-        .mid-name {
-            position: absolute;
-            display: flex;    
-            top: 40%;
-            left: 30%;
-        }
-
-        .last-name {
-            position: absolute;
-            display: flex;
-            top: 50%;
-            left: 50%;
-        }
-
+    .first-name {
+        position: absolute;
+        display: flex;
+        top: 20%;
+        left: 10%
     }
-        .first-letter {
-            color: $second-text-color;
-        }
-    
-        .first-name {
-            animation: bounceInLeft 1s;
-        }
-    
-        .mid-name {
-            animation: bounceInDown 1.2s;
-        }
-    
-        .last-name {
-            animation: bounceInRight 1.4s;
-        }
-    
-        .title:hover {
-            animation: jello 1s;
-        }
-    
-        .subtitle {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 30px;
-            position: absolute;
-            bottom: 25%;
-            left: 5%;
-            animation: bounceInUp 1s;
-        }
-    
-        .contacto-home {
-            width: 160px;
-            height: 60px;
-            animation: rubberBand 1s infinite;
-            position: absolute;
-            right: 30vw;
-            bottom: 5%;
-        }
-    
-        .btn-contacto-home {
-            animation: bounceInUp 1s;
-            width: 150px;
-            height: 50px;
-            background: $secondary-color;
-            border: 1px solid $second-text-color;
-            color: $second-text-color;
-            cursor: pointer;
-            border-radius: 15px;
-            font-size: 15px;
-        }
-    
+
+    .mid-name {
+        position: absolute;
+        display: flex;    
+        top: 40%;
+        left: 30%;
+    }
+
+    .last-name {
+        position: absolute;
+        display: flex;
+        top: 60%;
+        left: 50%;
+    }
+
+}
+.first-letter {
+    color: $second-text-color;
+}
+
+.first-name {
+    animation: bounceInLeft 1s;
+}
+
+.mid-name {
+    animation: bounceInDown 1.2s;
+}
+
+.last-name {
+    animation: bounceInRight 1.4s;
+}
+
+.title:hover {
+    animation: jello 1s;
+}
+
+.subtitle {
+    width: 70vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 15%;
+    left: 15vw;
+    animation: bounceInUp 1s;
+}
+
+.contacto-home {
+    width: 100px;
+    height: 60px;
+    animation: rubberBand 1s infinite;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    right: 15px;
+}
+
+.btn-contacto-home {
+    animation: bounceInUp 1s;
+    width: 100%;
+    height: 50px;
+    background: $secondary-color;
+    border: 1px solid $second-text-color;
+    color: $second-text-color;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
 
 
 @media screen and (min-width: $breackpoint-tablet) {

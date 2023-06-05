@@ -51,10 +51,10 @@ const NavBar = () => {
             </NavLink>
             <div className="lenguaje">
               <Link className="navbar-lenguage" to={"https://cesarnahuelrodasen.netlify.app/"}>
-                <button className='btn-english' ><img src="" alt="" /></button>
+                <button className='btn-english' ><img src="https://raw.githubusercontent.com/NahuRodas/nahurodas/main/public/englishIcon.png?token=GHSAT0AAAAAACBQWT3EOR2TIUGTSEHLWRBSZD6HYKA" className='icono' alt="" /></button>
               </Link>
               <Link className="navbar-lenguage active" to={"https://cesarnahuelrodas.netlify.app/"}>
-                <button className='btn-spanish' >ES</button>
+                <button className='btn-spanish' ><img src="https://raw.githubusercontent.com/NahuRodas/nahurodas/main/public/spanisIcon.png?token=GHSAT0AAAAAACBQWT3EJ22SFEBKQ4ACRJEGZD6HYLA" className='icono' alt="" /></button>
               </Link>
             </div>
           </nav>

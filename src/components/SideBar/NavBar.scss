@@ -132,10 +132,14 @@ $second-text-color: #F0EB8D;
 
 .navbar-lenguage {
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icono{
+    height: 100%;
 }
 
 .btn-english:hover {
@@ -189,6 +193,15 @@ $second-text-color: #F0EB8D;
 
     .navbar-lenguage{
         border-bottom: 1px $fourth-color solid;
+    }
+
+    .icono{
+        width: 50px;
+        filter: saturate(0.5);
+    }
+
+    .icono:hover{
+        filter: saturate(2);
     }
 
 }
