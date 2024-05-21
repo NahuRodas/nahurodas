@@ -5,7 +5,7 @@
 $breackpoint-smartphone-height: 480px;
 $breackpoint-smartphone-width: 320px;
 $breackpoint-tablet-height: 1024px;
-$breackpoint-tablet-width: 760px;
+$breackpoint-tablet-width: 768px;
 $breackpoint-desktop-height: 1680px;
 $breackpoint-desktop-width: 1050px;
 
@@ -26,144 +26,283 @@ $second-text-color: #F0EB8D;
         /**SMALL SCREENS - SMARTPHONES**/
         /*******************************/
 
+.home {
+    background-color: $secondary-color;
+    color: $text-color;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;    
+}
 
+.main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Techno', 'Arial';
+    user-select: none;
+    text-shadow: 5px 5px 2px $primary-color;
+}
 
-@media screen and (min-width: $breackpoint-smartphone-height) and (min-height: $breackpoint-smartphone-width){ 
-    
-    
-    .home {
-        background-color: $secondary-color;
-        color: $text-color;
-        box-sizing: border-box;
-        width: 100vw;
-        height: 100vh;    
-    }
-    .contenedor{
-        width: 100%;
-        height: 90%;
-        display: block;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-    }
+.first-name, .mid-name, .last-name{
+    position: absolute;
+    display: flex;
+}
+
+.first-letter {
+    color: $second-text-color;
+}
+
+.first-name {
+    animation: bounceInLeft 1s;
+}
+
+.mid-name {
+    animation: bounceInDown 1.2s;
+}
+
+.last-name {
+    animation: bounceInRight 1.4s;
+}
+
+.title:hover {
+    animation: jello 1s;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.subtitle {
+    box-sizing: border-box;
+    align-self: center;
+    padding: 5px;
+    width: 100%;
+    background-color: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    animation: bounceInUp 1s;
+    font-style: oblique;
+}
+
+.contacto-home {
+    width: auto;
+    height: auto;
+    animation: rubberBand 3s infinite;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    bottom: 3vh;
+    right: 5%;
+}
+
+.btn-contacto-home {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    animation: bounceInUp 1s;
+    background: $secondary-color;
+    border: 1px solid $second-text-color;
+    color: $second-text-color;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: $breackpoint-smartphone-width) and (min-height: $breackpoint-smartphone-height){ 
 
     .main-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10vw;
-        font-family: 'Techno', 'Arial';
-        user-select: none;
-        text-shadow: 5px 5px 2px $primary-color;
+        font-size: 15vw;
     }
 
     .first-name {
-        position: absolute;
-        display: flex;
-        top: 15%;
+        top: 30%;
         left: 10%
     }
 
-    .mid-name {
-        position: absolute;
-        display: flex;    
-        top: 35%;
+    .mid-name { 
+        top: 40%;
         left: 30%;
     }
 
     .last-name {
-        position: absolute;
-        display: flex;
-        top: 55%;
+        top: 50%;
         left: 50%;
     }
-    .first-letter {
-        color: $second-text-color;
+    
+    .subtitle{
+        font-size: 15px;
+        bottom: 20vh;
     }
     
-    .first-name {
-        animation: bounceInLeft 1s;
-    }
-    
-    .mid-name {
-        animation: bounceInDown 1.2s;
-    }
-    
-    .last-name {
-        animation: bounceInRight 1.4s;
-    }
-    
-    .title:hover {
-        animation: jello 1s;
-    }
-    
-    .subtitle {
-        box-sizing: border-box;
-        align-self: center;
-        width: 100%;
-        background-color: $primary-color;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 30px;
-        position: absolute;
-        top: 65vh;
-        animation: bounceInUp 1s;
-        font-style: oblique;
-    }
     
     .contacto-home {
-        width: auto;
-        height: auto;
-        animation: rubberBand 3s infinite;
-        position: absolute;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        bottom: 5vh;
+        bottom: 3vh;
         right: 5%;
-
     }
     
     .btn-contacto-home {
-        width: 20vw;
-        height: auto;
-        padding: 5px;
-        animation: bounceInUp 1s;
-        background: $secondary-color;
-        border: 1px solid $second-text-color;
-        color: $second-text-color;
-        cursor: pointer;
-        border-radius: 15px;
-        font-size: 2vw;
+        font-size: 4.5vw;
     }
 }
 
-@media screen and (min-width: $breackpoint-smartphone-width) and (min-height: $breackpoint-smartphone-height){ 
+@media screen and (min-width: $breackpoint-smartphone-height) and (min-height: $breackpoint-smartphone-width){ 
+
+    .main-title {
+        font-size: 10vw;
+    }
+
+    .first-name {
+        top: 10%;
+        left: 10%
+    }
+
+    .mid-name { 
+        top: 30%;
+        left: 30%;
+    }
+
+    .last-name {
+        top: 50%;
+        left: 50%;
+    }
     
+    .subtitle{
+        font-size: 15px;
+        bottom: 20vh;
+    }
+    
+    
+    .contacto-home {
+        bottom: 3vh;
+        right: 5%;
+    }
+    
+    .btn-contacto-home {
+        font-size: 2.5vw;
+    }
 }
 
         /**************************/
         /**MID SCREENS - TABLETS**/
         /**************************/
 @media screen and (min-width: $breackpoint-tablet-height) and (min-height: $breackpoint-tablet-width){ 
+    .main-title {
+        font-size: 14vw;
+    }
+
+    .first-name {
+        top: 10%;
+        left: 10%
+    }
+
+    .mid-name { 
+        top: 30%;
+        left: 30%;
+    }
+
+    .last-name {
+        top: 50%;
+        left: 50%;
+    }
     
+    .subtitle{
+        font-size: 20px;
+        bottom: 20vh;
+    }
+    
+    
+    .contacto-home {
+        bottom: 3vh;
+        right: 5%;
+    }
+    
+    .btn-contacto-home {
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (min-width: $breackpoint-tablet-width) and (min-height: $breackpoint-tablet-height){ 
+    .main-title {
+        font-size: 14vw;
+    }
+
+    .first-name {
+        top: 20%;
+        left: 10%
+    }
+
+    .mid-name { 
+        top: 30%;
+        left: 30%;
+    }
+
+    .last-name {
+        top: 40%;
+        left: 50%;
+    }
     
+    .subtitle{
+        font-size: 4vw;
+        bottom: 30vh;
+    }
+    
+    
+    .contacto-home {
+        bottom: 3vh;
+        right: 5%;
+    }
+    
+    .btn-contacto-home {
+        font-size: 4vw;
+    }
 }
 
         /**************************/
         /**BIG SCREENS - DESKTOP**/
         /**************************/
-@media screen and (min-width: $breackpoint-desktop-height) and (min-height: $breackpoint-desktop-width){ 
 
-}
 
-@media screen and (min-width: $breackpoint-desktop-width) and (min-height: $breackpoint-desktop-height){ 
+@media screen and (min-width: $breackpoint-desktop-width){ 
+    .main-title {
+        font-size: 10vw;
+    }
+
+    .first-name {
+        top: 10%;
+        left: 15%
+    }
+
+    .mid-name { 
+        top: 30%;
+        left: 35%;
+    }
+
+    .last-name {
+        top: 50%;
+        left: 55%;
+    }
     
+    .subtitle{
+        font-size: 2vw;
+        bottom: 20vh;
+    }
+    
+    
+    .contacto-home {
+        bottom: 3vh;
+        right: 5%;
+    }
+    
+    .btn-contacto-home {
+        font-size: 2vw;
+    }
 }
 
 
