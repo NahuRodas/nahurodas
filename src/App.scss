@@ -2,9 +2,12 @@
 /****** VARIABLES GLOBALES ******/
 /********************************/
 
-$breackpoint-smartphone: 300px;
-$breackpoint-tablet: 760px;
-$breackpoint-desktop: 1300px;
+$breackpoint-smartphone-high: 480px;
+$breackpoint-smartphone-width: 320px;
+$breackpoint-tablet-high: 1024px;
+$breackpoint-tablet-width: 760px;
+$breackpoint-desktop-high: 1680px;
+$breackpoint-desktop-width: 1050px;
 
 $navbar-bg: #3A1078;
 $primary-color: #0A2647;
@@ -28,7 +31,7 @@ $second-text-color: #F0EB8D;
     .quote,
     .decoration {
         font-family: cursive;
-        font-size: 5vw;
+        font-size: 4vw;
         color: $fourth-color;
         position: relative;
     }
@@ -40,11 +43,11 @@ $second-text-color: #F0EB8D;
     }
 
     .bg-code-top {
-        top: 20%;
+        top: 40%;
     }
 
     .bg-code-bot {
-        bottom: 20%;
+        bottom: 40%;
     }
 
     .quote {
@@ -61,7 +64,7 @@ $second-text-color: #F0EB8D;
         text-align: center;
     }
 
-@media screen and (min-width: $breackpoint-desktop) {
+@media screen and (min-width: $breackpoint-desktop-width) {
     .bg-html,
     .bg-body,
     .quote,

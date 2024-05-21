@@ -9,6 +9,10 @@ const NavBar = () => {
  
   const [Menu, setMenu] = useState(true);
 
+  /* if (screen.width > 760) {
+    console.log("True");
+  } */
+
   const menuOff = {
     display: 'none'
   }

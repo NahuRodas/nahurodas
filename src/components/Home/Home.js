@@ -31,9 +31,9 @@ const Home = () => {
               <div className="title">s</div>
             </div>
           </h1>
-        <p className='subtitle'>Desarrolador Web - Front end - Back end - Diseñador Web  </p>
+        <p className='subtitle'>Desarrollador Web - Front end - Back end - UI/UX  </p>
         <NavLink className="contacto-home" exact='true' to='/Contacto'>
-              <button className='btn-contacto-home'><span>¡Contactame!</span></button>
+              <button className='btn-contacto-home'><span>Contactame</span></button>
         </NavLink>
         </div>
       </div>
