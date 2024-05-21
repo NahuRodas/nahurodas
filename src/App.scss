@@ -2,11 +2,11 @@
 /****** VARIABLES GLOBALES ******/
 /********************************/
 
-$breackpoint-smartphone-high: 480px;
+$breackpoint-smartphone-height: 480px;
 $breackpoint-smartphone-width: 320px;
-$breackpoint-tablet-high: 1024px;
+$breackpoint-tablet-height: 1024px;
 $breackpoint-tablet-width: 760px;
-$breackpoint-desktop-high: 1680px;
+$breackpoint-desktop-height: 1680px;
 $breackpoint-desktop-width: 1050px;
 
 $navbar-bg: #3A1078;
@@ -31,7 +31,6 @@ $second-text-color: #F0EB8D;
     .quote,
     .decoration {
         font-family: cursive;
-        font-size: 4vw;
         color: $fourth-color;
         position: relative;
     }
@@ -50,49 +49,126 @@ $second-text-color: #F0EB8D;
         bottom: 40%;
     }
 
-    .quote {
+    .quote, .decoration {
         position: absolute;
+        text-align: center;
+    }
+
+@media screen and (min-width: $breackpoint-smartphone-height) and (min-height: $breackpoint-smartphone-width){
+    .bg-html,
+    .bg-body,
+    .quote,
+    .decoration {
+        font-size: 2.5vw;
+    }
+
+    .bg-code-top {
+        top: 30%;
+    }
+
+    .bg-code-bot {
+        bottom: 30%;
+    }
+
+    .quote {
         top: 5%;
-        right: 5%;
-        width: 90%;
+        width: 100%;
     }
 
     .decoration {
-        position: absolute;
-        bottom: 0;
-        width: 90%;
-        text-align: center;
+        bottom: 5%;
+        width: 100%;
     }
+}
+
+@media screen and (min-width: $breackpoint-smartphone-width) and (min-height: $breackpoint-smartphone-height){
+    .bg-html,
+    .bg-body,
+    .quote,
+    .decoration {
+        font-size: 4.5vw;
+    }
+
+    .bg-code-top {
+        top: 40%;
+    }
+
+    .bg-code-bot {
+        bottom: 40%;
+    }
+
+    .quote {
+        top: 10%;
+        width: 100%;
+    }
+
+    .decoration {
+        bottom: 10%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $breackpoint-tablet-height) and (min-height: $breackpoint-tablet-width){
+    .bg-html,
+    .bg-body,
+    .quote,
+    .decoration {
+        font-size: 2.5vw;
+    }
+
+    .bg-code-top {
+        top: 40%;
+    }
+
+    .bg-code-bot {
+        bottom: 40%;
+    }
+
+    .quote {
+        top: 5%;
+        width: 100%;
+    }
+
+    .decoration {
+        bottom: 5%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $breackpoint-tablet-width) and (min-height: $breackpoint-tablet-height){
+    .bg-html,
+    .bg-body,
+    .quote,
+    .decoration {
+        font-size: 4vw;
+    }
+
+    .quote {
+        top: 5%;
+        width: 100%;
+    }
+
+    .decoration {
+        bottom: 10%;
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: $breackpoint-desktop-width) {
     .bg-html,
     .bg-body,
     .quote,
     .decoration {
-        font-size: 20px;
-    }
-
-    .bg-code-bot,
-    .bg-code-top {
-        left: 15%;
-    }
-
-    .bg-code-top {
-        top: 20%;
-    }
-
-    .bg-code-bot {
-        bottom: 20%;
+        font-size: 1.5vw;
     }
 
     .quote {
-        top: 15%;
-        right: 5%;
-        width: 350px;
+        top: 5%;
+        width: 100%;
     }
 
     .decoration {
-        bottom: 0;
-        width: 70%;
+        bottom: 10%;
+        width: 100%;
     }
 }

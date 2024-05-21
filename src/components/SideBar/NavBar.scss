@@ -3,8 +3,12 @@
     /****** VARIABLES GLOBALES ******/
     /********************************/
 
-$breackpoint-smartphone: 300px;
-$breackpoint-desktop: 1300px;
+$breackpoint-smartphone-height: 480px;
+$breackpoint-smartphone-width: 320px;
+$breackpoint-tablet-height: 1024px;
+$breackpoint-tablet-width: 760px;
+$breackpoint-desktop-height: 1680px;
+$breackpoint-desktop-width: 1050px;
 
 $navbar-bg: #3A1078;
 $primary-color: #0A2647;
@@ -98,6 +102,7 @@ $second-text-color: #F0EB8D;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 35px;
 }
 
 .navbar-btn:hover {
@@ -167,7 +172,7 @@ $second-text-color: #F0EB8D;
 
 
 
-@media only screen and (min-width: $breackpoint-desktop) {
+@media only screen and (min-width: $breackpoint-tablet-height) {
 
     .navbar {
         width: 100px;
@@ -177,9 +182,7 @@ $second-text-color: #F0EB8D;
         left: 0;
     }
 
-    .hide-menu {
-        visibility: hidden;
-    }
+    
 
     .menu {
         visibility: visible;
