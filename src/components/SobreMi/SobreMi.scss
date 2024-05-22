@@ -6,7 +6,8 @@ $breackpoint-smartphone-height: 480px;
 $breackpoint-smartphone-width: 320px;
 $breackpoint-tablet-height: 1024px;
 $breackpoint-tablet-width: 760px;
-$breackpoint-desktop: 1680px;
+$breackpoint-s-desktop: 1380px;
+$breackpoint-b-desktop: 1680px;
 
 
 $navbar-bg: #3A1078;
@@ -17,176 +18,354 @@ $fourth-color: #2C74B3;
 $text-color: #e2e7f1;
 $second-text-color: #F0EB8D;
 
+/********************************/
+/****** ESTILOS GLOBALES ******/
+/********************************/
 
-    .contenedor-sobre-mi {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
+.contenedor{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
 
-    .sobre-mi {
-        position: absolute;
-        top: 10%;
-        font-family: Arial, Helvetica, sans-serif;
-        color: $text-color;
-        background-color: $third-color;
-        width:90vw;
-        height: fit-content;
-        border: 4px solid $primary-color;
-        border-radius: 15px;
-        box-shadow: 10px 10px $primary-color;
-        animation: bounceInLeft 1s;
-    }
+.sobre-mi {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text-color;
+    background-color: $third-color;
+    border: 4px solid $primary-color;
+    border-radius: 15px;
+    box-shadow: 10px 10px $primary-color;
+    animation: bounceInLeft 1s;
+}
 
-    .contenido-sobre-mi {
-        padding: 20px;
-    }
-
-    .contenido-sobre-mi h2 {
+.contenido-sobre-mi {
+    h2 {
         text-align: center;
-        font-size: 5.5vw;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
-
-    .contenido-sobre-mi p {
-        font-size: 4vw;
+    p {
         text-align: justify;
-        margin-bottom: 20px;
     }
-
-    .contenido-sobre-mi span {
+    span {
         color: $second-text-color;
-    }
-
-    .profile-picture {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bg {
-        rotate: 180deg;
-        width: 62vw;
-        height: 62vw;
-        padding: 8px;
-        position: absolute;
-        bottom: 8.8%;
-        background: conic-gradient(#14417200 90%, $second-text-color);
-        border-radius: 50%;
-        opacity: 0;
-        animation: ppAnimation 1s linear infinite;
-    }
-
-    .pp-bg {
-        width: 62vw;
-        height: 62vw;
-        padding: 8px;
-        position: absolute;
-        bottom: 8.8%;
-        background: conic-gradient(#14417200 90%, $text-color);
-        border-radius: 50%;
-        opacity: 0;
-        animation: ppAnimation 1s linear infinite;
-    }
-
-    .pp-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: fadeIn 1s;
-    }
-
-    .pp-img img {
-        position: absolute;
-        bottom: 9%;
-        width: 60vw;
-        border-radius: 50%;
-    }
-
-    @keyframes ppAnimation {
-        0% {
-            transform: rotate(0deg);
-            opacity: 100;
-        }
-
-        100% {
-            transform: rotate(360deg);
-            opacity: 100;
-        }
-    }
-
-
-
-@media screen and (min-width: $breackpoint-tablet-width) {
-    .sobre-mi {
-        top: 5%;
-    }
-
-    .pp-bg,
-    .bg {
-        bottom: 0.5%;
-    }
-
-    .pp-img img {
-        bottom: 1%;
     }
 }
 
-@media screen and (min-width: $breackpoint-desktop) {
-    
+.profile-picture {
+    display: block;
+}
+
+.pp-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s;
+    img {
+        position: absolute;
+        border-radius: 50%;
+        border: 4px $primary-color solid;
+    }
+}
+
+
+    // Sideways smartphone
+@media screen and (min-width: $breackpoint-smartphone-height) and (min-height: $breackpoint-smartphone-width) {
     .sobre-mi {
-        top:auto;
-        left: 15%;
-        width: 40vw;
+        top: 10%;
+        left: 3%;
+        width:45%;
+        height: fit-content;
     }
 
     .contenido-sobre-mi {
-        padding: 20px;
+        padding: 5px;
+        
+        h2 {
+
+            font-size: 3.5vw;
+            margin-top: 5%;
+            padding-bottom: 5%;
+            margin-bottom: 5%;
+            border-bottom: 1px #e2e7f1 solid;
+        }
+        p {
+            font-size: 2vw;
+            margin-bottom: 5%;
+        }
+    }
+    .profile-picture {
+        width:45%;
+    }
+
+
+    .pp-img {
+        img {
+            right: 3%;
+            top: 8%;
+            width: 40%;
+        }
+    }
+}
+    // Normal smartphone
+@media screen and (min-width: $breackpoint-smartphone-width) and (min-height: $breackpoint-smartphone-height) {
+    .sobre-mi {
+        top: 5%;
+        left: 5%;
+        width:90%;
+        height: fit-content;
+    }
+
+    .contenido-sobre-mi {
+        padding: 5px;
+        
+        h2 {
+
+            font-size: 5.5vw;
+            margin-top: 5%;
+            padding-bottom: 5%;
+            margin-bottom: 5%;
+            border-bottom: 1px #e2e7f1 solid;
+        }
+        p {
+            font-size: 4.5vw;
+            margin-bottom: 5%;
+        }
+    }
+    .profile-picture {
+        width:90%;
+        align-items: center;
+    }
+
+    .pp-img {
+        img {
+            bottom: 5%;
+            left: 18%;
+            width: 65%;
+        }
+    }
+}
+    // Sideways tablet
+@media screen and (min-width: $breackpoint-tablet-height) and (min-height: $breackpoint-tablet-width) {
+    .sobre-mi {
+        top: 20%;
+        left: 5%;
+        width:45%;
+        height: fit-content;
+    }
+
+    .contenido-sobre-mi {
+        padding: 10px;
+        
+        h2 {
+            font-size: 3.5vw;
+            margin-top: 5%;
+            padding-bottom: 5%;
+            margin-bottom: 5%;
+            border-bottom: 1px #e2e7f1 solid;
+        }
+        p {
+            font-size: 2vw;
+            margin-bottom: 5%;
+        }
+    }
+    .profile-picture {
+        right: 5%;
+        width: 40%;
+    }
+
+    .pp-img {
+        right: 5%;
+        img {
+            top: 20%;
+            left: 55%;
+            width:40%;
+        }
+    }
+}
+    // Normal tablet
+@media screen and (min-width: $breackpoint-tablet-width) and (min-height: $breackpoint-tablet-height) {
+    .sobre-mi {
+        top: 3%;
+        left: 5%;
+        width:90%;
+        height: fit-content;
+    }
+
+    .contenido-sobre-mi {
+        h2 {
+
+            font-size: 5.5vw;
+            margin-top: 3%;
+            padding-bottom: 3%;
+            margin-bottom: 3%;
+            border-bottom: 1px #e2e7f1 solid;
+        }
+        p {
+            padding: 10px;
+            font-size: 3.5vw;
+            margin-bottom: 5%;
+        }
+    }
+    .profile-picture {
+        width:100%;
+    }
+
+    .pp-img {
+        img {
+            left: 23%;
+            top: 58%;
+            width: 55%;
+        }
+    }
+}
+    // Square screen
+@media screen and (min-width: $breackpoint-tablet-height) and (min-height: $breackpoint-tablet-height) {
+    .sobre-mi {
+        top: 3%;
+        left: 5%;
+        width:90%;
+        height: fit-content;
+    }
+
+    .contenido-sobre-mi {
+        h2 {
+
+            font-size: 3vw;
+            margin-top: 3%;
+            padding-bottom: 3%;
+            margin-bottom: 3%;
+            border-bottom: 1px #e2e7f1 solid;
+        }
+        p {
+            padding: 10px;
+            font-size: 2vw;
+            margin-bottom: 5%;
+        }
+    }
+    .profile-picture {
+        width:100%;
+    }
+
+    .pp-img {
+        img {
+            left: 33%;
+            top: 55%;
+            width: 30%;
+        }
+    }
+}
+    // Sideways small monitor
+@media screen and (min-width: $breackpoint-tablet-height) and (min-height: $breackpoint-s-desktop){
+    
+    .sobre-mi {
+        top: 3%;
+        left: 5%;
+        width:90%;
+        height: fit-content;
+    }
+
+    .contenido-sobre-mi {
+        h2 {
+
+            font-size: 5.5vw;
+            margin-top: 3%;
+            padding-bottom: 3%;
+            margin-bottom: 3%;
+            border-bottom: 1px #e2e7f1 solid;
+        }
+        p {
+            padding: 10px;
+            font-size: 3.5vw;
+            margin-bottom: 5%;
+        }
+    }
+    .profile-picture {
+        width:100%;
+    }
+
+    .pp-img {
+        img {
+            left: 23%;
+            top: 58%;
+            width: 55%;
+        }
+    }
+}
+    // Normal small monitor
+@media screen and (min-width: $breackpoint-s-desktop) and (min-height: $breackpoint-tablet-height){
+    
+    .sobre-mi {
+        top:30%;
+        left: 10%;
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .contenido-sobre-mi {
         padding-top: 30px;
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            padding: 15px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
     }
-
-    .contenido-sobre-mi h2 {
-        font-size: 30px;
-    }
-
-    .contenido-sobre-mi p {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .contenido-sobre-mi span {
-        color: $second-text-color;
-    }
-
     .profile-picture {
         display: flex;
         align-items: center;
-        justify-content: center;
+        align-content: center;
     }
 
-    .bg {
-        width: 29vw;
-        height: 29vw;
-        right: 9.5%;
-        bottom: 19%;
 
+    .pp-img {
+        img {
+            left: 60%;
+            top: 30%;
+            width: 35vw;
+            height: 35vw;
+        }
     }
+}
 
-    .pp-bg {
-        width: 29vw;
-        height: 29vw;
-        right: 9.5%;
-        bottom: 19%;
-    }
-
-    .pp-img img {
-        position: absolute;
-        right: 10%;
-        bottom: 20%;
-        width: 28vw;
-        border-radius: 50%;
-    }
+    // Normal big monitor
+@media screen and (min-width: $breackpoint-b-desktop){
     
+    .sobre-mi {
+        top:30%;
+        left: 10%;
+        width: 40vw;
+        height: fit-content;
+    }
+
+    .contenido-sobre-mi {
+        padding-top: 30px;
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            padding: 15px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .profile-picture {
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    .pp-img {
+        img {
+            left: 60%;
+            top: 27%;
+            width: 25vw;
+            height: 25vw;
+        }
+    }
 }
