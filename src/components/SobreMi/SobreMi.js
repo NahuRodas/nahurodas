@@ -16,10 +16,6 @@ const SobreMi = () => {
                 </div>
             </div>
             <div className="profile-picture">
-                <div className="pp-bg">                   
-                </div>
-                <div className="bg">                   
-                </div>
                 <div className="pp-img">
                     <img src={ ProfilePicture } alt="Foto de perfil " />
                 </div>
