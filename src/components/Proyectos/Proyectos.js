@@ -1,7 +1,7 @@
 import './Proyectos.scss'
 import Proyecto1 from '../../assets/proyecto1.PNG'
 import Proyecto2 from '../../assets/proyecto2.PNG'
-import Proyecto3 from '../../assets/proyecto3.PNG'
+//import Proyecto3 from '../../assets/proyecto3.PNG'
 import Proyecto4 from '../../assets/proyecto4.PNG'
 import Proyecto5 from '../../assets/proyecto5.PNG'
 
