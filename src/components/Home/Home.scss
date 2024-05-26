@@ -41,6 +41,7 @@ $second-text-color: #F0EB8D;
     font-family: 'Techno', 'Arial';
     user-select: none;
     text-shadow: 5px 5px 2px $primary-color;
+    font-size: 20px;
 }
 
 .first-name, .mid-name, .last-name{
@@ -53,14 +54,20 @@ $second-text-color: #F0EB8D;
 }
 
 .first-name {
+    top: 25%;
+    left: 15%;
     animation: bounceInLeft 1s;
 }
 
 .mid-name {
+    top: 35%;
+    left: 35%;
     animation: bounceInDown 1.2s;
 }
 
 .last-name {
+    top: 45%;
+    left: 55%;
     animation: bounceInRight 1.4s;
 }
 
@@ -88,6 +95,8 @@ $second-text-color: #F0EB8D;
     position: absolute;
     animation: bounceInUp 1s;
     font-style: oblique;
+    font-size: 15px;
+    bottom: 20vh;
 }
 
 .contacto-home {
@@ -101,6 +110,7 @@ $second-text-color: #F0EB8D;
     align-self: center;
     bottom: 3vh;
     right: 5%;
+    font-size: 3.5vw;
 }
 
 .btn-contacto-home {

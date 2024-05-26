@@ -9,10 +9,6 @@ const NavBar = () => {
  
   const [Menu, setMenu] = useState(true);
 
-  /* if (screen.width > 760) {
-    console.log("True");
-  } */
-
   const menuOff = {
     display: 'none'
   }
@@ -35,23 +31,23 @@ const NavBar = () => {
       <div className='navbar'>
         <div className="contenedor-nav">
           <div className="hide-menu">
-            <button className='btn hide-menu-btn' onClick={ hideMenu }><i class='bx bx-menu'></i></button>
+            <button className='btn hide-menu-btn' onClick={ hideMenu }><i className='bx bx-menu'></i></button>
           </div>
           <nav className='menu' style={ Menu ?  menuOn : menuOff}>
             <Link className='navbar-home' to='/'>
-              <button className='btn btn-home'><i class='bx bxs-home' ></i><span>Inicio</span></button>
+              <button className='btn btn-home'><i className='bx bxs-home' ></i><span>Inicio</span></button>
             </Link>
             <NavLink className="navbar-btn" exact="true" to="/SobreMi">
-              <button className='btn btn-sobre-mi'><i class='bx bxs-user' ></i><span>Sobre mi</span></button>
+              <button className='btn btn-sobre-mi'><i className='bx bxs-user' ></i><span>Sobre mi</span></button>
             </NavLink>
             <NavLink className="navbar-btn" exact='true' to='/Curriculum'>
-              <button className='btn btn-curriculum'><i class='bx bxs-file' ></i><span>Curriculum</span></button>
+              <button className='btn btn-curriculum'><i className='bx bxs-file' ></i><span>Curriculum</span></button>
             </NavLink>
             <NavLink className="navbar-btn" exact='true' to='/Proyectos'>
-              <button className='btn btn-proyectos'><i class='bx bxs-terminal'></i><span>Proyectos</span></button>
+              <button className='btn btn-proyectos'><i className='bx bxs-terminal'></i><span>Proyectos</span></button>
             </NavLink>
             <NavLink className="navbar-btn" exact='true'  to='/Contacto'>
-              <button className='btn btn-contacto'><i class='bx bxs-envelope' ></i><span>Contacto</span></button>
+              <button className='btn btn-contacto'><i className='bx bxs-envelope' ></i><span>Contacto</span></button>
             </NavLink>
             <div className="lenguaje">
               <Link className="navbar-lenguage" to={"https://cesarnahuelrodasen.netlify.app/"}>

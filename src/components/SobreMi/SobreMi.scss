@@ -29,10 +29,12 @@ $second-text-color: #F0EB8D;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    padding-top: 5px;
 }
 
 .sobre-mi {
     position: absolute;
+    height: 50%;
     font-family: Arial, Helvetica, sans-serif;
     color: $text-color;
     background-color: $third-color;
@@ -45,9 +47,12 @@ $second-text-color: #F0EB8D;
 .contenido-sobre-mi {
     h2 {
         text-align: center;
+        font-size: 18px;
+        border-bottom: 1px white solid;
     }
     p {
         text-align: justify;
+        font-size: 15px;
     }
     span {
         color: $second-text-color;
@@ -67,6 +72,8 @@ $second-text-color: #F0EB8D;
         position: absolute;
         border-radius: 50%;
         border: 4px $primary-color solid;
+        width: 100px;
+        bottom: 1%;
     }
 }
 
