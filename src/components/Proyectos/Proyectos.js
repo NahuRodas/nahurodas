@@ -19,7 +19,8 @@ const Proyectos = () => {
             </div>
           </div>
           <div className="proyecto">
-            <a href="https://nahurodas.github.io/ToDoList/" rel="noreferrer" target="_blank"><img src={ Proyecto2 } alt="Proyecto 2" /></a>
+            <a href="https://nahurodas.github.io/ToDoList/" rel="noreferrer" target="_blank">
+              <img src={ Proyecto2 } alt="Proyecto 2" /></a>
             <div className="proyecto-info">
               <h4> Lista de tareas </h4>
               <p> Simple lista de tareas donde se puede agregar tareas, eliminarlas y/o
@@ -28,7 +29,7 @@ const Proyectos = () => {
               <p> Conocimientos utilizados: JavaScript - HTML - CSS - Git</p>
             </div>
           </div>
-          <div className="proyecto-info">
+          <div className="proyecto">
              <a href="https://nahurodas.github.io/miniGames/" rel="noreferrer" target="_blank" > 
              <img src={ Proyecto3 } alt="Proyecto 3" />
              </a> 
