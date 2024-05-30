@@ -1,7 +1,7 @@
 import './Proyectos.scss'
 import Proyecto1 from '../../assets/proyecto1.PNG'
 import Proyecto2 from '../../assets/proyecto2.PNG'
-//import Proyecto3 from '../../assets/proyecto3.PNG'
+import Proyecto3 from '../../assets/proyecto3.PNG'
 import Proyecto4 from '../../assets/proyecto4.PNG'
 import Proyecto5 from '../../assets/proyecto5.PNG'
 
@@ -28,13 +28,13 @@ const Proyectos = () => {
               <p> Conocimientos utilizados: JavaScript - HTML - CSS - Git</p>
             </div>
           </div>
-          <div className="inactive">
-            {/* <a href="http://placekitten.com/1950/1024" rel="noreferrer" target="_blank" > */}
-              <img src="https://via.placeholder.com/600x400/0a2647/F0EB8D?text=Coming+soon" alt="Proyecto 3" />
-            {/* </a> */}
+          <div className="proyecto-info">
+             <a href="https://nahurodas.github.io/miniGames/" rel="noreferrer" target="_blank" > 
+             <img src={ Proyecto3 } alt="Proyecto 3" />
+             </a> 
             <div className="proyecto-info">
-              <h4>Coming soon</h4>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h4>Mini Games</h4>
+              <p>Una coleccion de minijuegos mayormente desarrollados en JavaScript.</p>
             </div>
           </div>
           <div className="proyecto">
