@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.5b2e2f2f.css",
-    "main.js": "/static/js/main.5f3f665a.js",
+    "main.js": "/static/js/main.e0bf376e.js",
     "static/media/proyecto1.PNG": "/static/media/proyecto1.8a95367231feeb58081d.PNG",
     "static/media/foto_perfil2.PNG": "/static/media/foto_perfil2.4b31b88177b5dbd6a60e.PNG",
     "static/media/proyecto4.PNG": "/static/media/proyecto4.f73d435fcfd99a3ad14d.PNG",
     "static/media/proyecto5.PNG": "/static/media/proyecto5.f9e6ac8553ff4cf30903.PNG",
+    "static/media/proyecto3.PNG": "/static/media/proyecto3.c02e39f3cd55bd249665.PNG",
     "static/media/TechnoRaceItalic-eZRWe.otf": "/static/media/TechnoRaceItalic-eZRWe.ff13a3964ea1685bd362.otf",
     "static/media/proyecto2.PNG": "/static/media/proyecto2.266333c9ead259e6699b.PNG",
     "index.html": "/index.html",
     "main.5b2e2f2f.css.map": "/static/css/main.5b2e2f2f.css.map",
-    "main.5f3f665a.js.map": "/static/js/main.5f3f665a.js.map"
+    "main.e0bf376e.js.map": "/static/js/main.e0bf376e.js.map"
   },
   "entrypoints": [
     "static/css/main.5b2e2f2f.css",
-    "static/js/main.5f3f665a.js"
+    "static/js/main.e0bf376e.js"
   ]
 }
